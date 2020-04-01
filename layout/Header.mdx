@@ -1,0 +1,31 @@
+<header
+  sx={{
+    variant: 'styles.header',
+  }}>
+  <div
+    sx={{
+      maxWidth: 768,
+      mx: 'auto',
+      px: 3,
+      display: 'flex',
+      alignItems: 'baseline',
+    }}>
+    <Link to='/'
+      sx={{
+        variant: 'styles.navlink',
+        fontSize: 5,
+        py: 2,
+      }}>
+      My app
+    </Link>
+    <div sx={{ mx: 'auto' }} />
+    <Link to='/about'
+      sx={{
+        variant: 'styles.navlink',
+        ml: 3,
+        py: 2,
+      }}>
+      About
+    </Link>
+  </div>
+</header>
