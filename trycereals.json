@@ -10,6 +10,8 @@
     "type": "MDX"
   }],
   "layout": {
-    "header": "layout/Header.mdx"
+    "header": {
+      "path": "layout/Header.mdx"
+    }
   }
 }
