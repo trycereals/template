@@ -9,10 +9,9 @@
     "path": "pages/index.mdx",
     "type": "MDX"
   }],
-  "layout": {
-    "header": {
-      "type": "MDX",
-      "path": "layout/Header.mdx"
-    }
-  }
+  "layout": [{
+    "slug": "header",
+    "path": "layout/Header.mdx",
+    "type": "MDX"
+  }]
 }
