@@ -1,86 +1,44 @@
-<Container
+<Box
+  flex
+  as="header"
   sx={{
-    display: 'grid',
-    gridGap: 3,
-    maxWidth: 768,
-    mx: 'auto',
-    px: 3,
-    py: 3,
-    gridAutoFlow: 'row',
-    gridTemplateColumns: [
-      'repeat(2, 1fr)',
-      'repeat(3, 1fr)',
-    ],
     variant: 'styles.header',
-  }}>
-  <Box
+    border: t => `1px solid ${t.colors.muted}`,
+    px: 0
+  }}
+>
+  <Flex
     sx={{
-      display: 'flex',
+      maxWidth: 768,
+      mx: 'auto',
+      px: 0,
       alignItems: 'center',
-      justifyContent: 'center',
-      gridColumnStart: [ 1, 2 ],
-      gridColumnEnd: [ 3, 3 ],
-      order: [ 0, 1 ],
     }}>
-    <Link to='/' title='Home'>
-      <img
-        alt='UI Logo'
-        src='https://contrast.now.sh/cff/40f?size=48&fontSize=2&baseline=2&fontWeight=900&radius=32&text=UI'
-      />
-      <Box
-        sx={{
-          position: 'absolute',
-          display: 'inine',
-          width: 1,
-          height: 1,
-          overflow: 'hidden',
-          top: -9999,
-        }}>
-        Home
-      </Box>
-    </Link>
-  </Box>
-  <Box
-    sx={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'flex-start',
-    }}>
-    <Link to='/work'
+    <Link as="a" href='/'
       sx={{
         variant: 'styles.navlink',
-        p: 2,
+        fontSize: 5,
+        fontWeight: '500',
+        py: 2,
       }}>
-      Work
+      My site.
     </Link>
+    <Box sx={{ mx: 'auto' }} />
     <Link to='/blog'
       sx={{
         variant: 'styles.navlink',
-        p: 2,
+        ml: 3,
+        py: 2,
       }}>
       Blog
     </Link>
-  </Box>
-  <Box
-    sx={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'flex-end',
-      order: 2
-    }}>
     <Link to='/about'
       sx={{
         variant: 'styles.navlink',
-        p: 2,
+        ml: 3,
+        py: 2,
       }}>
       About
     </Link>
-    <Link to='/contact'
-      sx={{
-        variant: 'styles.navlink',
-        p: 2,
-      }}>
-      Contact
-    </Link>
-  </Box>
-</Container>
+  </Flex>
+</Box>
